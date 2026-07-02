@@ -1,0 +1,60 @@
+name: iq_test_professional
+description: "Aplikasi Tes IQ Profesional - Native Flutter, backend 100% gratis (Google Apps Script)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # Networking
+  http: ^1.2.2
+
+  # Local storage (session, remember me)
+  shared_preferences: ^2.3.2
+
+  # UI & UX
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  fl_chart: ^0.69.0            # grafik hasil tes
+  lottie: ^3.1.3                # animasi splash & loading (opsional, pakai file lottie gratis)
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0                # efek loading skeleton
+  percent_indicator: ^4.2.3      # progress bar tes
+
+  # Sertifikat PDF
+  pdf: ^3.11.1
+  printing: ^5.13.3
+
+  # Utilitas
+  intl: ^0.19.0                  # format tanggal
+  url_launcher: ^6.3.0            # buka WhatsApp
+  image_picker: ^1.1.2            # foto profil
+  connectivity_plus: ^6.0.5       # cek koneksi internet
+  flutter_secure_storage: ^9.2.2  # simpan token sesi lebih aman
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Setelah menambahkan font kustom (opsional), daftarkan di sini
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
